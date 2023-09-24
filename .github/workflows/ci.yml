@@ -54,8 +54,7 @@ jobs:
         CXX: clang++
         PLATFORM: linux
         COMPILER: clang
-        GENERATOR: Ninja
-      
+        GENERATOR: Ninja 
     - name: Permission
       run: sudo chmod 777 ci/linux-build.sh
     - name: Check Formatting
