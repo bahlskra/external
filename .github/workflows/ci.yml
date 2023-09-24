@@ -18,10 +18,8 @@ jobs:
         PLATFORM: linux
         COMPILER: gcc
         GENERATOR: Unix Makefiles
-    - name: Permission
       run: sudo chmod 777 ci/linux-build.sh
-    - name: Check Formatting
-      run: ci/linux-build.sh
+           ci/linux-build.sh
     - name: Get Release
       id: get_release
       uses: bruceadams/get-release@v1.2.2
@@ -55,10 +53,8 @@ jobs:
         PLATFORM: linux
         COMPILER: clang
         GENERATOR: Ninja 
-    - name: Permission
       run: sudo chmod 777 ci/linux-build.sh
-    - name: Check Formatting
-      run: ci/linux-build.sh
+           ci/linux-build.sh
     - name: Get Release
       id: get_release
       uses: bruceadams/get-release@v1.2.2
