@@ -18,6 +18,7 @@ jobs:
         PLATFORM: linux
         COMPILER: gcc
         GENERATOR: Unix Makefiles
+      run: sudo chmod 777 ci/linux-build.sh
       run: ci/linux-build.sh
     - name: Get Release
       id: get_release
@@ -52,6 +53,7 @@ jobs:
         PLATFORM: linux
         COMPILER: clang
         GENERATOR: Ninja
+      run: sudo chmod 777 ci/linux-build.sh
       run: ci/linux-build.sh
     - name: Get Release
       id: get_release
